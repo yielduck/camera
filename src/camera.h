@@ -18,7 +18,7 @@ struct Camera
 
         vec3 const d = x * (u * verticalFOV * aspectRatio)
                      + y * (v * verticalFOV)
-                     + z;
+                     - z;
         return
         {
             .origin = position,
